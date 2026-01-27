@@ -1,0 +1,14 @@
+import java.util.LinkedHashSet;
+
+public class LinkedHashSetExample {
+    public static void main(String[] args) {
+        LinkedHashSet<Integer> numbers = new LinkedHashSet<>();
+
+        numbers.add(30);
+        numbers.add(10);
+        numbers.add(20);
+        numbers.add(10); // Duplicate - ignored
+
+        System.out.println(numbers); // [30, 10, 20] - insertion order maintained
+    }
+}
