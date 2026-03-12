@@ -9,6 +9,8 @@ public class TreeMapExample {
         prices.put("Orange", 80.0);
         prices.put("Mango", 150.0);
 
+        System.out.println(prices.hashCode());
+
         // Keys automatically sorted
         System.out.println(prices); // {Apple=120.0, Banana=40.0, Mango=150.0, Orange=80.0}
 

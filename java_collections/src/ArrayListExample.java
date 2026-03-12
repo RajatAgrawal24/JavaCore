@@ -11,6 +11,12 @@ public class ArrayListExample {
         fruits.add("Orange");
         fruits.add("Apple"); // Duplicates allowed
 
+        System.out.println(fruits.get(0).hashCode());
+        System.out.println(fruits.hashCode());
+
+        System.out.println(fruits);
+        System.out.println(fruits.toString());
+
         System.out.println(fruits.get(0)); // Apple
 
         System.out.println("Size: " + fruits.size()); // 4
