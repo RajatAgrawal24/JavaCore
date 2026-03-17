@@ -16,6 +16,7 @@ public class SumListOfList {
             list.get(i).add(3);
         }
 
-        System.out.println(list.stream().map(l -> l.stream().mapToInt(Integer::valueOf).sum()).reduce(Integer::sum).get());
+//        System.out.println(list.stream().map(l -> l.stream().mapToInt(Integer::valueOf).sum()).reduce(Integer::sum).get());
+        System.out.println(list.stream().map(l -> l.stream().mapToInt(Integer::valueOf).sum()).mapToInt(Integer::valueOf).sum());
     }
 }
